@@ -4,10 +4,7 @@ import { useState } from "react";
 export default function Lottery() {
     let [ticket, setTicket] = useState(genTicket(3));
     let isWinning = sum(ticket) === 15;
-    return (
-
-
-        
+    return (        
         <div>
             <h1>Lottery Game!</h1>
             <div className="ticket">
